@@ -53,7 +53,7 @@ while true:
 make one print statement
 let user use upper and lower case
 wrap everything in a function 
-
+make function for validation 
 """
 
 while True:
@@ -80,30 +80,25 @@ while True:
                 print "Please provide integers to calculate"
                 continue
             num2 = None
+        result = ""
         if oper == "+":
             result = add(num1, num2)
-            print "  =  %i" % (result)
         elif oper == "-":
             result = subtract(num1, num2)
-            print "  =  %i" % (result)
         elif oper == "*":
             result = multiply(num1, num2)
-            print "  =  %i" % (result)
         elif oper == "/":
             result = divide(num1, num2)
-            print "  =  %f" % (result)
         elif oper == "square":
             result = square(num1)
-            print "  =  %i" % (result)
         elif oper == "cube":
             result = cube(num1)
-            print "  =  %i" % (result)
         elif oper == "pow":
             result = power(num1, num2)
-            print "  =  %i" % (result)
         elif oper == "mod":
             result = mod(num1, num2)
-            print "  =  %i" % (result)
+        print "  =  %i" % (result)
+
     else:
         print "Sorry I didnt understand what you wrote"
 
